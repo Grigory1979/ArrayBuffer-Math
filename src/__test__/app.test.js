@@ -1,8 +1,8 @@
 import Daemon from "../daemon";
 import Magician from "../magician";
 
-test('Атака мага без дурмана', () => {
-	const Stas = new Magician('Stas');
+test("Атака мага без дурмана", () => {
+	const Stas = new Magician("Stas");
 	Stas.attack = 100;
 	const result = Stas.attack;
 	expect(result(2)).toEqual(90);
